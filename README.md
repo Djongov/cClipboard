@@ -1,2 +1,2 @@
-# WAF Block Request
- WAF Blocked request page + Clipboard support
+# Clipboard support
+ Clipboard support for class="c0py"
