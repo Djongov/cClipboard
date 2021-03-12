@@ -7,8 +7,9 @@ function buildCopy() {
   const copyDivs = document.querySelectorAll('.c0py');
   // Log them to the console
   console.log("Found " + copyDivs.length + " C0py elements")
+  // Start the whole deal only if there are elements with class "c0py" in the DOM
   if (copyDivs.length > 0) {
-      // Add the css stylesheet
+    // Add the css stylesheet
     let headID = document.getElementsByTagName('head')[0];
     let link = document.createElement('link');
     link.type = 'text/css';
