@@ -1,12 +1,3 @@
-// Add the css stylesheet
-let headID = document.getElementsByTagName('head')[0];
-let link = document.createElement('link');
-link.type = 'text/css';
-link.rel = 'stylesheet';
-// https://secopsstorageacc.blob.core.windows.net/css/blocked.css
-link.href = './cClipboard.css';
-headID.appendChild(link);
-        
 // Load the buildCopy function as on body load
 document.body.onload = buildCopy;
 
@@ -16,6 +7,16 @@ function buildCopy() {
   const copyDivs = document.querySelectorAll('.c0py');
   // Log them to the console
   console.log("Found " + copyDivs.length + " C0py elements")
+  if (copyDivs.length > 0) {
+      // Add the css stylesheet
+    let headID = document.getElementsByTagName('head')[0];
+    let link = document.createElement('link');
+    link.type = 'text/css';
+    link.rel = 'stylesheet';
+    // https://secopsstorageacc.blob.core.windows.net/css/blocked.css
+    link.href = './cClipboard.css';
+    headID.appendChild(link);
+  
   // Loop through all of the found c0py elements
   for (i = 0; i < copyDivs.length; ++i) {
     // create the div that will encompass the entire clipboard image + tooltip
@@ -78,4 +79,5 @@ function buildCopy() {
       }
     }
   } 
+}
 }
