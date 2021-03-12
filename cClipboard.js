@@ -1,3 +1,4 @@
+// Add the css stylesheet
 let headID = document.getElementsByTagName('head')[0];
 let link = document.createElement('link');
 link.type = 'text/css';
