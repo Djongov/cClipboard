@@ -1,27 +1,3 @@
-/* General Settings */
-html {
-    font-size: 16px;
-}
-body {
-    text-align: center;
-    background: white;
-}
-p {
-    font-size: 1.2rem;
-}
-/* The c0py container */
-.c0py {
-    max-width: max-content;
-    background: dimgray;
-    margin: 10px auto;
-    padding: 1rem;
-    color: white;
-    border: 2px solid orange;
-    font-size: 1.2rem;
-    font-family: 'Courier New', Courier, monospace;
-    box-shadow: 0 3.2px 7.2px 0 rgb(0 0 0 / 55%), 0 0.6px 1.8px 0 rgb(0 0 0 / 55%);
-    word-wrap: break-word;
-}
 /* Tooltips Settings */
 .tooltip {
     position: relative;
