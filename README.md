@@ -13,7 +13,7 @@ So insert the cClipboard.js
  ```html
 <script src="./cClipboard.js"></script>
 ```
-It will automatically load the cClipboard.css only if there are elements with class="c0py" on the document. Important think to note is where you place the cClipboard.css file. It assumes that it is in the same directory but if not, edit the code on line 18 in cClipboard.js with the proper path. Have in mind that the tooltip class is .tooltip so it might interfere with other styles with that name. Another think to consider is where you place your cClipboard.svg image. Line 35 in cClipboard.js controls the path, by default it's in the same folder as the .js script as well. 
+It will automatically load the cClipboard.css only if there are elements with class="c0py" on the document. Important think to note is where you place the cClipboard.css file. It assumes that it is in the same directory but if not, edit the code on line 18 in cClipboard.js with the proper path. Another think to consider is where you place your cClipboard.svg image. Line 35 in cClipboard.js controls the path, by default it's in the same folder as the .js script as well. 
 
 That's it.
 

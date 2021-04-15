@@ -1,9 +1,9 @@
 /* Tooltips Settings */
-.tooltip {
+.cCtooltip {
     position: relative;
     display: inline-block;
 }
-.tooltip .tooltiptext {
+.cCtooltip .cCtooltiptext {
     visibility: hidden;
     width: 140px;
     background-color: black;
@@ -19,7 +19,7 @@
     word-wrap: break-word;
     display: inline-block;
 }
-.tooltip .tooltiptext::after {
+.cCtooltip .cCtooltiptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -29,7 +29,7 @@
     border-style: solid;
     border-color: black transparent transparent transparent;
 }
-.tooltip:hover .tooltiptext {
+.cCtooltip:hover .cCtooltiptext {
     visibility: visible;
     opacity: 1;
 }

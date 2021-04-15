@@ -23,11 +23,11 @@ function buildCopy() {
             // create the div that will encompass the entire clipboard image + tooltip
             const createTooltipDiv = document.createElement('div');
             // add class tooltip
-            createTooltipDiv.classList.add('tooltip');
+            createTooltipDiv.classList.add('cCtooltip');
             // insert it right after the c0py element
             copyDivs[i].parentNode.insertBefore(createTooltipDiv, copyDivs[i].nextSibling);
             // save the tooltip div to a variable for later use
-            const tooltipDiv = document.getElementsByClassName('tooltip')[i];
+            const tooltipDiv = document.getElementsByClassName('cCtooltip')[i];
             // Let's create the clipboard image
             const clipboardImg = new Image(35, 35);
             // Add the c0py-icon class which serves purpose for the onclick event later
@@ -40,7 +40,7 @@ function buildCopy() {
             // create a <span> that will hold the tooltip text "Copy to clipboard"
             const createTooltipText = document.createElement('span');
             // Add tooltiptext class to it for styling
-            createTooltipText.classList.add('tooltiptext');
+            createTooltipText.classList.add('cCtooltiptext');
             // Set the text to Copy to Clipboard
             createTooltipText.innerHTML = "Copy to clipboard";
             // Add it as a child of the tooltip div
@@ -48,7 +48,7 @@ function buildCopy() {
             // Save the text value of the c0py element that will need saving to clipboard, for usre in the copyToClipboard function
             const text = copyDivs[i].innerHTML;
             //  Save the tooltip span element so it can be used in the copyToClipboard function (to change the text to Copied! after clicking)
-            const element = document.getElementsByClassName('tooltiptext')[i];
+            const element = document.getElementsByClassName('cCtooltiptext')[i];
             // Set the onclick event listener on the clipboard icon
             document.getElementsByClassName('c0py-icon')[i].addEventListener("click", function() {
                 copyToClipboard(text, element)
