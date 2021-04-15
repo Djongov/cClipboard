@@ -1,5 +1,5 @@
 // Load the buildCopy function on body load
-document.body.onload = buildCopy;
+window.onload = buildCopy;
 
 // function to go through all the items with .c0py class and build tooltips and clipboard copy image + event
 function buildCopy() {
