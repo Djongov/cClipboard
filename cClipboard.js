@@ -14,8 +14,10 @@ function buildCopy() {
         let link = document.createElement('link');
         link.type = 'text/css';
         link.rel = 'stylesheet';
+        link.integrity = 'sha384-hVlBRriMBCEJtd/pB9l9Q2W732YOI67xBihNoe4760AzTiAB9ECIiVplgM5OH8ht';
+        link.crossOrigin = 'anonymous';
         // Change this to the location where you will place the cClipboard.css
-        link.href = './cClipboard.css';
+        link.href = 'https://cdn.jsdelivr.net/gh/Djongov/cClipboard/cClipboard.css';
         headID.appendChild(link);
 
         // Loop through all of the found c0py elements
@@ -32,7 +34,7 @@ function buildCopy() {
             const clipboardImg = new Image(35, 35);
             // Add the c0py-icon class which serves purpose for the onclick event later
             clipboardImg.classList.add('c0py-icon');
-            clipboardImg.src = './clipboard.svg';
+            clipboardImg.src = 'https://djo.blob.core.windows.net/cclipboard/clipboard.svg';
             clipboardImg.alt = 'Copy this reference to Clipboard';
             clipboardImg.style.marginTop = "10px";
             // Add it as a child of the tooltip div
