@@ -18,3 +18,18 @@ It will automatically load the cClipboard.css only if there are elements with cl
 That's it.
 
 Then you just add "c0py" class to any element that you want to have a button to copy to clipboard
+
+## Installation through CDN
+
+Fetch it from a CDN 
+
+```html
+<script src="https://cdn.jsdelivr.net/gh/Djongov/cClipboard/cClipboard.js" integrity="sha384-mVgthW5e+8JH1vVmzBGM+HjJ1FcgrSCnQOEYbKBX+H6edW26YPmRX0dEbQjI76nW" crossorigin="anonymous"></script>
+```
+
+The CDN for the css file is this although you won't need it as the JS file will load it automatically.
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Djongov/cClipboard/cClipboard.css" integrity="sha384-hVlBRriMBCEJtd/pB9l9Q2W732YOI67xBihNoe4760AzTiAB9ECIiVplgM5OH8ht" crossorigin="anonymous">
+```
+The image will be delivered from https://djo.blob.core.windows.net/cclipboard/clipboard.svg
