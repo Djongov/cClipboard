@@ -6,7 +6,7 @@ cClipboard is a small Javascript library that creates a copy to clipboard button
 All you have to do is insert the script from a CDN and start adding class="c0py" to the html elements you want to have a copy to clipboard on
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/Djongov/cClipboard/cClipboard.min.js" integrity="sha384-ZqsQaxzk/6V2gEjL6hjxoogNPsLKUxZjMoc2cwLMtwQusAAa4UEtVHLKZMxM1jlU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/Djongov/cClipboard@v1.0.1/cClipboard.min.js" integrity="sha384-N75xYewFG0GqtAc5o5bbXvYjs3pxwDndG9KhOWEltGXfqlx7MKOdIB6FLifDxF+a" crossorigin="anonymous"></script>
 ```
 
 The JS file will load automatically the following:
