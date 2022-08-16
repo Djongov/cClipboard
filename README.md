@@ -1,16 +1,12 @@
 # cClipboard
-cClipboard is a very small and incredibly simple to use Javascript library that creates and appends a copy to clipboard button to all elements with the class="c0py".
-
-Original Size:	2.3KB gzipped (6.99KB uncompressed) Compiled Size:	1.33KB gzipped (4.04KB uncompressed)
-
-And that's with comments on every line!
+cClipboard is a very small (1.7 KB gzipped) and incredibly simple to use Javascript library that creates and appends a copy to clipboard button to all elements with the class="c0py".
 
 ## Installation through CDN
 
-All you have to do is insert the script from the CDN and the bottom (or at least after the copy elements would have rendered) of your ```html <body> ``` and start adding ```html class="c0py"``` to the html elements you want to have a copy to clipboard on
+All you have to do is insert the script from the CDN and the bottom (or at least after the copy elements would have rendered) of your ```<body> ``` and start adding ```class="c0py"``` to the html elements you want to have a copy to clipboard on
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/Djongov/cClipboard@v2.0/cClipboard.min.js" integrity="sha384-N75xYewFG0GqtAc5o5bbXvYjs3pxwDndG9KhOWEltGXfqlx7MKOdIB6FLifDxF+a" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/Djongov/cClipboard@v2.0/cClipboard.min.js" integrity="sha384-1oQ7VKt13uvkHRCm1gTNlBzQLODHZMTkzboZ2uqa+mV+aMp9cdp5bYFZZG0nDl9W" crossorigin="anonymous"></script>
 ```
 ## Usage
 Just add a class "c0py" to the element you want to copy text from and that's it!
@@ -20,7 +16,7 @@ You are able to customize the color of the svg icon (stroke) and the stroke-widt
 
 Example:
 
-```html <p class="c0py" data-clipboard-icon-stroke="#ff4500" data-clipboard-icon-stroke-width="1.5">Copy me!</p> ```
+```<p class="c0py" data-clipboard-icon-stroke="#ff4500" data-clipboard-icon-stroke-width="1.5">Copy me!</p> ```
 
 Best is to use strok-with between 1 and 3.
 
@@ -29,6 +25,11 @@ Script looks for DOM elements with class "c0py". Then it creates a couple of new
 
 ## References
 The SVG icon comes from https://tablericons.com/
+
+## Content-Security-Policy
+If you are running a Content-Secuirty-Policy there are 2 directives you need to configure
+```stype-src 'unsafe-inline'``` as the stylings of the tooltip are inline (that way the script does not require a .css file)
+```script-src https://cdn.jsdelivr.net/gh/Djongov/cClipboard@v2.0/cClipboard.min.js``` to allow the loading of the script from the jsdelivr CDN
 
 ## Improvements
 Some areas where we can improve the library:
