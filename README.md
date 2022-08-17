@@ -3,7 +3,7 @@ cClipboard is a very small (1.7 KB gzipped) and incredibly simple to use Javascr
 
 ## Installation through CDN
 
-All you have to do is insert the script from the CDN and the bottom (or at least after the copy elements would have rendered) of your ```<body> ``` and start adding ```class="c0py"``` to the html elements you want to have a copy to clipboard on
+All you have to do is insert the script from the CDN at the bottom (or at least after the c0py elements would have rendered) of your ```<body> ``` and start adding ```class="c0py"``` to the html elements you want to have a copy to clipboard function on
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/Djongov/cClipboard@v2.0/cClipboard.min.js" integrity="sha384-1oQ7VKt13uvkHRCm1gTNlBzQLODHZMTkzboZ2uqa+mV+aMp9cdp5bYFZZG0nDl9W" crossorigin="anonymous"></script>
@@ -21,18 +21,18 @@ Example:
 Best is to use strok-with between 1 and 3.
 
 ## How it works
-Script looks for DOM elements with class "c0py". Then it creates a couple of new elements like a div, a svg icon and a tooltip div and appends them as the next element after the element with the class "c0py".
-
-## References
-The SVG icon comes from https://tablericons.com/
+Script looks through the DOM for elements with class "c0py". Then it creates a couple of new elements like a div, a svg icon and a tooltip div and appends them as the next element after the element with the class "c0py".
 
 ## Content-Security-Policy
 If you are running a Content-Secuirty-Policy there are 2 directives you need to configure
 ```stype-src 'unsafe-inline'``` as the stylings of the tooltip are inline (that way the script does not require a .css file)
 ```script-src https://cdn.jsdelivr.net/gh/Djongov/cClipboard@v2.0/cClipboard.min.js``` to allow the loading of the script from the jsdelivr CDN
 
+## References
+The SVG icon comes from https://tablericons.com/
+
 ## Improvements
 Some areas where we can improve the library:
 - Tooltip positioning - Tooltip overflows if the copy icon is on the left: 0 position
-- Icon positioning
+- Icon positioning. It is on a new line after certain elements 
 - Mabye a better way to render the icons
