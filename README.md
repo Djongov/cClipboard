@@ -6,7 +6,7 @@ cClipboard is a very small (1.7 KB gzipped) and incredibly simple to use Javascr
 All you have to do is insert the script from the CDN at the bottom (or at least after the c0py elements would have rendered) of your ```<body> ``` and start adding ```class="c0py"``` to the html elements you want to have a copy to clipboard function on
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/Djongov/cClipboard@v2.1/cClipboard.min.js" integrity="sha384-1oQ7VKt13uvkHRCm1gTNlBzQLODHZMTkzboZ2uqa+mV+aMp9cdp5bYFZZG0nDl9W" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/Djongov/cClipboard@v2.0/cClipboard.min.js" integrity="sha384-1oQ7VKt13uvkHRCm1gTNlBzQLODHZMTkzboZ2uqa+mV+aMp9cdp5bYFZZG0nDl9W" crossorigin="anonymous"></script>
 ```
 ## Usage
 Just add a class "c0py" to the element you want to copy text from and that's it!
