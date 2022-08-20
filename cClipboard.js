@@ -113,29 +113,29 @@ function buildCopy() {
     
             // Now the actual copy to clipboard function
             function copyToClipboard (text, element) {
-            // use the new ClipboardEvent API
-            if (window.clipboardData && window.clipboardData.setData) {
-                // IE specific code path to prevent textarea being shown while dialog is visible.
-                return clipboardData.setData("Text", text); 
-                // If the new one is not supported, try the old one with execCommand("copy")
-            } else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
-                var textarea = document.createElement("textarea");
-                textarea.textContent = text;
-                textarea.style.position = "fixed";  // Prevent scrolling to bottom of page in MS Edge.
-                document.body.appendChild(textarea);
-                textarea.select();
-                try {
-                    return document.execCommand("copy");
-                } catch (ex) {
-                    console.warn("Copy to clipboard failed.", ex);
-                    element.innerHTML = "Failed to Copy";
-                    return false;
-                } finally {
-                    document.body.removeChild(textarea);
-                    element.innerHTML = "Copied";
-                    console.log("Copied: " + text);
+                // use the new ClipboardEvent API
+                if (window.clipboardData && window.clipboardData.setData) {
+                    // IE specific code path to prevent textarea being shown while dialog is visible.
+                    return clipboardData.setData("Text", text); 
+                    // If the new one is not supported, try the old one with execCommand("copy")
+                } else if (document.queryCommandSupported && document.queryCommandSupported("copy")) {
+                    var textarea = document.createElement("textarea");
+                    textarea.textContent = text;
+                    textarea.style.position = "fixed";  // Prevent scrolling to bottom of page in MS Edge.
+                    document.body.appendChild(textarea);
+                    textarea.select();
+                    try {
+                        return document.execCommand("copy");
+                    } catch (ex) {
+                        console.warn("Copy to clipboard failed.", ex);
+                        element.innerHTML = "Failed to Copy";
+                        return false;
+                    } finally {
+                        document.body.removeChild(textarea);
+                        element.innerHTML = "Copied";
+                        console.log("Copied: " + text);
+                    }
                 }
-            }
             }
         }
     }
