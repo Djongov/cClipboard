@@ -18,7 +18,7 @@ Example:
 
 ```<p class="c0py" data-clipboard-icon-stroke="#ff4500" data-clipboard-icon-stroke-width="1.5">Copy me!</p> ```
 
-Best is to use strok-with between 1 and 3.
+Best is to use stroke-width between 1 and 3.
 
 ## How it works
 Script looks through the DOM for elements with class "c0py". Then it creates a couple of new elements like a div, a svg icon and a tooltip div and appends them as the next element after the element with the class "c0py".
