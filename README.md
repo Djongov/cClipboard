@@ -26,7 +26,7 @@ Script looks through the DOM for elements with class "c0py". Then it creates a c
 ## Content-Security-Policy
 If you are running a Content-Secuirty-Policy there are 2 directives you need to configure
 ```stype-src 'unsafe-inline'``` as the stylings of the tooltip are inline (that way the script does not require a .css file)
-```script-src https://cdn.jsdelivr.net/gh/Djongov/cClipboard@v2.0/cClipboard.min.js``` to allow the loading of the script from the jsdelivr CDN
+```script-src https://cdn.jsdelivr.net/gh/Djongov/cClipboard@v2.1/cClipboard.min.js``` to allow the loading of the script from the jsdelivr CDN
 
 ## References
 The SVG icon comes from https://tablericons.com/
